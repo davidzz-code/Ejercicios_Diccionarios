@@ -24,8 +24,21 @@ def addContact():
     i += 1
     return contactos
 
-print(addContact())
-asdasf
+
+def consultarTodos(contactos):
+    return contactos.items(contactos)
 
 
+addContact()
+
+consultarTodos()
+# def consultarKey(clave):
+#     contactos.get("clave", "No existe")
+
+
+# print("¿Que quieres hacer?:")
+# menu = input("- Añadir contacto" \n 
+#             "- Consultar por clave" \n
+#             "- Consultar por todos" \n
+#             "- Eliminar todos" )
 
