@@ -4,6 +4,7 @@
 # consultar todos los contactos y eliminar contacto. Aprovecha lo que has aprendido hasta el momento 
 # (diccionarios, funciones, procedimientos…).
 
+# Creamos la lista en el programa principal para que todas las funciones la puedan usar como global
 contactos = []
 def addContact():
     dict = {}
@@ -19,18 +20,27 @@ def addContact():
     dict['Email'] = email
     contactos.append(dict)
 
+# Función que consulta todos los contactos
 def consultarTodos():
     return contactos
 
-print(consultarTodos())
-# print(f"Estos son los contactos: {consultarTodos()}")
-# def consultarKey(clave):
-#     contactos.get("clave", "No existe")
+# Función que consulta contactos a través de su posición en la lista. El índice será el número clave que introduce el usuario
+def consultarKey(clave):
+    return contactos[clave]
+
+
+
+
+
+
+
 
 
 # print("¿Que quieres hacer?:")
 # menu = input("- Añadir contacto" \n 
 #             "- Consultar por clave" \n
+###################### claveUser = int(input("Dime el número clave del contacto que quieres consultar: ")) print(consultarKey(claveUser))
 #             "- Consultar por todos" \n
-#             "- Eliminar todos" )
+#             "- Eliminar todos" \n
+#             "- Salir")
 
