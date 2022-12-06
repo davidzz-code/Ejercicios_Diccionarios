@@ -4,34 +4,26 @@
 # consultar todos los contactos y eliminar contacto. Aprovecha lo que has aprendido hasta el momento 
 # (diccionarios, funciones, procedimientos…).
 
-contactos = {}
-lista = []
-
-
+contactos = []
 def addContact():
-    i = 1
+    dict = {}
     nombre = input("Dime el nombre: ")
-    lista.append(nombre)
+    dict['Nombre'] = nombre
     ap1 = input("Dime el primer apellido: ")
-    lista.append(ap1)
+    dict['Primer apellido'] = ap1
     ap2 = input("Dime el segundo apellido: ")
-    lista.append(ap2)
+    dict['Segundo apellido'] = ap2
     telefono = int(input("Dime el teléfono: "))
-    lista.append(telefono)
+    dict['Teléfono'] = telefono
     email = input("Dime el email: ")
-    lista.append(email)
-    contactos[i] = lista
-    i += 1
+    dict['Email'] = email
+    contactos.append(dict)
+
+def consultarTodos():
     return contactos
 
-
-def consultarTodos(contactos):
-    return contactos.items(contactos)
-
-
-addContact()
-
-consultarTodos()
+print(consultarTodos())
+# print(f"Estos son los contactos: {consultarTodos()}")
 # def consultarKey(clave):
 #     contactos.get("clave", "No existe")
 
