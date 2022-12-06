@@ -28,10 +28,8 @@ def consultarTodos():
 def consultarKey(clave):
     return contactos[clave]
 
-
-
-
-
+def eliminarContactos(posicion):
+    return contactos.pop(posicion)
 
 
 
