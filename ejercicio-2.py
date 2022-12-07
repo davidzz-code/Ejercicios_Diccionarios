@@ -1,10 +1,5 @@
 # David Ramírez - CONTAR PALABRAS
 
-# Escribir un programa que lea una frase, y pase ésta como parámetro a una función que debe contar el número de palabras que contiene. 
-# El resultado se debe imprimir en el programa principal. 
-# Asume que cada palabra está separada por un solo blanco.
-# No se sabe cómo están separadas las palabras. Pueden estar separadas por más de un blanco o por signos de puntuación.
-
 # Variable que guarda la frase del usuario
 fraseUsuario = str(input("Escribe una frase y contaré las palabras: "))
 
@@ -22,7 +17,7 @@ def contarPalabras_V1(frase):
 ################################################# B. No sabemos como están separadas las palabras #############################################
 
 # El bucle "for" recorre la frase del usuario y compara con la variable "signos".
-# En caso de encontrar algún signo de puntuación, añadirá un espacio en blanco
+# En caso de encontrar algún signo de puntuación, añadirá un guión 
 def contarPalabras_V2(frase):
     lista = []
     signos = " ,;.:-_/~#¿?¡!<>}{[]*"
@@ -34,7 +29,8 @@ def contarPalabras_V2(frase):
         nuevaFrase = "".join(lista)
     
     fraseFinal = nuevaFrase.split("-")
-
+    
+    # Borra los guiones de la lista de manera que únicamente nos queda una lista de palabras y basta con retornar la longitud de la lista 
     while "" in fraseFinal:
         fraseFinal.remove("")
         
