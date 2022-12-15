@@ -55,9 +55,3 @@ while menu != "Salir":
         menu = input("- Añadir contacto \n- Consultar por clave \n- Consultar todos \n- Eliminar contacto \n- Salir \nOpción: ")
     else:
         menu = input("..:Esa opción no existe, por favor elige una opción:.. : \n- Añadir contacto \n- Consultar por clave \n- Consultar todos \n- Eliminar contacto \n- Salir \nOpción: ")
-
-        Holasdas
-        dscsd
-        sdc
-        sdc
-        sd
